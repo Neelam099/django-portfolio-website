@@ -12,8 +12,58 @@
 ## Education
 ![6](https://user-images.githubusercontent.com/125033123/219969995-ac6a3300-cfd7-40fa-b39c-8bd49e3ee9c0.jpg)
 ## 
+Environment Setup 🚀
+$ git clone https://github.com/Akash1362000/django_project_blogapp.git
 
+$ cd django_project_blogapp/
 
+If virtualenv is not installed (What is virtualenv?):
 
+$ pip install virtualenv
 
+Create a virtual environment
 
+$ virtualenv venv
+
+Activate the environment everytime you open the project
+
+$ source venv/Scripts/activate
+
+Install requirements 🛠
+
+$ pip install -r requirements.txt
+
+Run migrations for Database
+
+$ python manage.py makemigrations
+
+$ python manage.py migrate
+
+Create superuser for Admin Login 🔐
+
+$ python manage.py createsuperuser
+
+Enter your desired username, email and password. Make sure you remember them as you'll need them in future.
+
+eg.
+
+Username: admin
+
+Email: admin@admin.com
+
+Password: HighlyConfidentialPassword
+All Set! 🤩
+
+Now you can run the server to see your application up & running 🚀
+
+$ python manage.py runserver
+
+To exit the environment ❎
+
+$ deactivate
+
+Every time you want to open the application in browser, make sure you run:
+
+$ source venv/Scripts/activate
+
+$ python manage.py runserver
